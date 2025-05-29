@@ -12,11 +12,7 @@
     <div class="container">
         <div class="header-content">
             <div class="logo">
-                <?php if (has_custom_logo()) : ?>
-                    <?php the_custom_logo(); ?>
-                <?php else : ?>
-                    <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-                <?php endif; ?>
+                <?php plumberpro_display_logo('header'); ?>
             </div>
             
             <nav class="main-nav">

@@ -1,0 +1,228 @@
+/* Content Management Admin Styles */
+.plumberpro-admin-wrap {
+    background: #f1f1f1;
+    margin: 20px 0 0 -20px;
+    padding: 20px;
+}
+
+.plumberpro-admin-header {
+    background: linear-gradient(135deg, #29d1d1 0%, #1a9999 100%);
+    color: white;
+    padding: 30px;
+    margin: -20px -20px 30px -20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.plumberpro-admin-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.plumberpro-admin-header p {
+    margin: 10px 0 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.plumberpro-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.plumberpro-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.plumberpro-section-header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 20px 30px;
+    border-bottom: 3px solid #29d1d1;
+}
+
+.plumberpro-section-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.plumberpro-section-header h2:before {
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: #29d1d1;
+    margin-right: 15px;
+    border-radius: 2px;
+}
+
+.plumberpro-section-content {
+    padding: 30px;
+}
+
+.form-table {
+    width: 100%;
+}
+
+.form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+    font-weight: 600;
+    color: #2c3e50;
+    vertical-align: top;
+}
+
+.form-table td {
+    padding: 15px 0;
+}
+
+.form-table input[type="text"],
+.form-table input[type="email"],
+.form-table input[type="url"],
+.form-table textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background: #fafbfc;
+}
+
+.form-table input[type="text"]:focus,
+.form-table input[type="email"]:focus,
+.form-table input[type="url"]:focus,
+.form-table textarea:focus {
+    outline: none;
+    border-color: #29d1d1;
+    box-shadow: 0 0 0 3px rgba(41, 209, 209, 0.1);
+    background: white;
+}
+
+.form-table textarea {
+    min-height: 80px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.submit-wrapper {
+    text-align: center;
+    padding: 30px 0;
+    background: #f8f9fa;
+    margin: 0 -30px -30px -30px;
+    border-top: 1px solid #e1e5e9;
+}
+
+.button-primary {
+    background: linear-gradient(135deg, #29d1d1 0%, #1a9999 100%) !important;
+    border: none !important;
+    padding: 15px 40px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    text-shadow: none !important;
+    box-shadow: 0 4px 15px rgba(41, 209, 209, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+
+.button-primary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(41, 209, 209, 0.4) !important;
+}
+
+.notice {
+    border-left: 4px solid #29d1d1;
+    background: white;
+    border-radius: 6px;
+    margin: 20px 0;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.additional-options {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.additional-options h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.additional-options p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.additional-options a {
+    color: #29d1d1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.additional-options a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plumberpro-admin-wrap {
+        margin: 10px 0 0 -10px;
+        padding: 10px;
+    }
+    
+    .plumberpro-admin-header {
+        padding: 20px;
+        margin: -10px -10px 20px -10px;
+    }
+    
+    .plumberpro-admin-header h1 {
+        font-size: 2rem;
+    }
+    
+    .plumberpro-section-content {
+        padding: 20px;
+    }
+    
+    .form-table th {
+        width: auto;
+        display: block;
+        padding-bottom: 5px;
+    }
+    
+    .form-table td {
+        display: block;
+        padding-top: 5px;
+    }
+}
+
+/* Loading Animation */
+.plumberpro-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+} 

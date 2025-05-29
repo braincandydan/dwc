@@ -10,11 +10,11 @@
     ?>>
         <div class="container">
             <div class="hero-content">
-                <h1><?php echo get_theme_mod('hero_title', 'Next-Gen Plumbing Solutions'); ?></h1>
-                <p><?php echo get_theme_mod('hero_subtitle', 'Advanced plumbing technology meets expert craftsmanship. Smart solutions for modern homes and businesses.'); ?></p>
+                <h1><?php echo plumberpro_get_content('hero_title', 'Next-Gen Plumbing Solutions'); ?></h1>
+                <p><?php echo plumberpro_get_content('hero_subtitle', 'Advanced plumbing technology meets expert craftsmanship. Smart solutions for modern homes and businesses.'); ?></p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Smart Quote</a>
-                    <a href="tel:<?php echo get_theme_mod('phone_number', '(555) 123-4567'); ?>" class="btn btn-secondary">Emergency Call</a>
+                    <a href="<?php echo plumberpro_get_content('hero_primary_button_link', '#contact'); ?>" class="btn btn-primary"><?php echo plumberpro_get_content('hero_primary_button_text', 'Get Smart Quote'); ?></a>
+                    <a href="tel:<?php echo plumberpro_get_content('phone_number', '(555) 123-4567'); ?>" class="btn btn-secondary"><?php echo plumberpro_get_content('hero_secondary_button_text', 'Emergency Call'); ?></a>
                 </div>
             </div>
         </div>
@@ -88,19 +88,37 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>The Future of Plumbing</h2>
-                    <p>We combine traditional craftsmanship with cutting-edge technology to deliver plumbing solutions that are smarter, more efficient, and built for the future.</p>
-                    <p>Our team of certified technicians uses advanced diagnostic tools, IoT-enabled fixtures, and sustainable practices to ensure your plumbing system operates at peak performance.</p>
+                    <h2><?php echo plumberpro_get_content('about_title', 'The Future of Plumbing'); ?></h2>
+                    <p><?php echo plumberpro_get_content('about_paragraph_1', 'We combine traditional craftsmanship with cutting-edge technology to deliver plumbing solutions that are smarter, more efficient, and built for the future.'); ?></p>
+                    <p><?php echo plumberpro_get_content('about_paragraph_2', 'Our team of certified technicians uses advanced diagnostic tools, IoT-enabled fixtures, and sustainable practices to ensure your plumbing system operates at peak performance.'); ?></p>
                     <ul>
-                        <li>✓ Licensed & Insured Professionals</li>
-                        <li>✓ 24/7 Smart Monitoring Available</li>
-                        <li>✓ Transparent Digital Pricing</li>
-                        <li>✓ Lifetime Warranty on Premium Services</li>
-                        <li>✓ Eco-Friendly Solutions</li>
+                        <?php 
+                        $features = array(
+                            plumberpro_get_content('about_feature_1', '✓ Licensed & Insured Professionals'),
+                            plumberpro_get_content('about_feature_2', '✓ 24/7 Smart Monitoring Available'),
+                            plumberpro_get_content('about_feature_3', '✓ Transparent Digital Pricing'),
+                            plumberpro_get_content('about_feature_4', '✓ Lifetime Warranty on Premium Services'),
+                            plumberpro_get_content('about_feature_5', '✓ Eco-Friendly Solutions')
+                        );
+                        foreach ($features as $feature) :
+                            if (!empty($feature)) :
+                        ?>
+                        <li><?php echo esc_html($feature); ?></li>
+                        <?php 
+                            endif;
+                        endforeach; 
+                        ?>
                     </ul>
                 </div>
                 <div class="about-image">
+                    <?php 
+                    $about_image = plumberpro_get_content('about_image');
+                    if ($about_image) :
+                    ?>
+                    <img src="<?php echo esc_url($about_image); ?>" alt="<?php echo esc_attr(plumberpro_get_content('about_title', 'About Us')); ?>">
+                    <?php else : ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/tech-plumber.jpg" alt="Advanced Plumbing Technology">
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -109,29 +127,29 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Connect With Us</h2>
+            <h2 class="section-title"><?php echo plumberpro_get_content('contact_section_title', 'Connect With Us'); ?></h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Get In Touch</h3>
+                    <h3><?php echo plumberpro_get_content('contact_info_title', 'Get In Touch'); ?></h3>
                     <div class="contact-item">
                         <i>📞</i>
-                        <span><?php echo get_theme_mod('phone_number', '(555) 123-4567'); ?></span>
+                        <span><?php echo plumberpro_get_content('phone_number', '(555) 123-4567'); ?></span>
                     </div>
                     <div class="contact-item">
                         <i>✉️</i>
-                        <span><?php echo get_theme_mod('email', 'info@plumberpro.com'); ?></span>
+                        <span><?php echo plumberpro_get_content('email', 'info@plumberpro.com'); ?></span>
                     </div>
                     <div class="contact-item">
                         <i>📍</i>
-                        <span><?php echo get_theme_mod('address', '123 Tech Boulevard, Smart City, ST 12345'); ?></span>
+                        <span><?php echo plumberpro_get_content('address', '123 Tech Boulevard, Smart City, ST 12345'); ?></span>
                     </div>
                     <div class="contact-item">
                         <i>🕒</i>
-                        <span>Mon-Fri: 7AM-6PM | Emergency: 24/7</span>
+                        <span><?php echo plumberpro_get_content('business_hours', 'Mon-Fri: 7AM-6PM | Emergency: 24/7'); ?></span>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h3>Request Smart Quote</h3>
+                    <h3><?php echo plumberpro_get_content('contact_form_title', 'Request Smart Quote'); ?></h3>
                     <form method="post" action="">
                         <div class="form-group">
                             <label for="name">Name</label>
