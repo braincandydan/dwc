@@ -1054,6 +1054,12 @@ img.custom-logo:hover {
     font-size: 2.8rem;
     line-height: 1.2;
   }
+
+  .footer-social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+  }
 }
 
 /* Loading Animation */
