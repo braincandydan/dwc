@@ -171,6 +171,11 @@ img.custom-logo:hover {
   transform: scale(1.05) !important;
 }
 
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
 /* Responsive logo adjustments */
 @media (max-width: 768px) {
   .site-header .header-content .logo-svg svg,
