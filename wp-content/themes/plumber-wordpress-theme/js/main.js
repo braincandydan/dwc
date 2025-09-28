@@ -156,7 +156,13 @@ jQuery(document).ready(function($) {
       .logo-cls-15 { fill: #231f20; }
     </style>
   </defs>
-  <text class="logo-cls-13" transform="translate(0 373.36)"><tspan class="logo-cls-5" x="0" y="0">PLUMBING </tspan><tspan class="logo-cls-2" x="131.7" y="0">///</tspan><tspan class="logo-cls-15" x="162.12" y="0"> </tspan><tspan class="logo-cls-5" x="170.04" y="0">RENO</tspan><tspan class="logo-cls-8" x="236.54" y="0">V</tspan><tspan class="logo-cls-11" x="251.52" y="0">A</tspan><tspan class="logo-cls-6" x="266.5" y="0">TIONS</tspan><tspan class="logo-cls-14" x="338.32" y="0" xml:space="preserve">  </tspan><tspan class="logo-cls-2" x="354.16" y="0">/// </tspan><tspan class="logo-cls-5" x="392.5" y="0">INS</tspan><tspan class="logo-cls-12" x="432.19" y="0">T</tspan><tspan class="logo-cls-7" x="443.83" y="0">ALL</tspan><tspan class="logo-cls-10" x="486.13" y="0">A</tspan><tspan class="logo-cls-5" x="501.11" y="0">TION</tspan><tspan class="logo-cls-14" x="559.45" y="0"> </tspan><tspan class="logo-cls-2" x="567.37" y="0">///</tspan><tspan class="logo-cls-14" x="597.79" y="0"> </tspan><tspan class="logo-cls-5" x="605.71" y="0">RE</tspan><tspan class="logo-cls-9" x="635.27" y="0">P</tspan><tspan class="logo-cls-7" x="648.39" y="0">AIR</tspan></text>
+  <text class="logo-cls-13" transform="translate(0 373.36)">
+  <tspan class="logo-cls-5" x="100" y="0">PLUMBING </tspan>
+
+  <tspan class="logo-cls-5" x="280" y="0">INSTALLATION </tspan>
+
+  <tspan class="logo-cls-5" x="500" y="0">REPAIR</tspan>
+  </text>
   <text class="logo-cls-3" transform="translate(68.95 295.1)"><tspan x="0" y="0">DRIFTWELL CONTRACTING</tspan></text>
   <g>
     <path class="logo-cls-4" d="M407.95,157.49c5.11,14.21-8.88,18.21-8.88,18.21l-26.38.53,8.9,9.9h114.7c14.99-5.06,8.06-20,8.06-20l-84.53-104.34h-90.39l78.53,95.7Z"/>
